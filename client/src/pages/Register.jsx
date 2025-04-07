@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux"
 import { useSelector } from "react-redux"
 import Button from "../components/Button"
 import { register } from "../redux/thunk/userThunk"
+import { Link } from "react-router-dom"
 
 function Register() {
   const [name, setName] = useState("")
@@ -92,9 +93,9 @@ function Register() {
 
                 <p className="mt-4 text-sm text-gray-500 sm:mt-0">
                   Already have an account?
-                  <a href="/login" className="text-gray-700 underline">
+                  <Link to="/login" className="text-gray-700 underline">
                     Log in
-                  </a>
+                  </Link>
                   .
                 </p>
               </div>
