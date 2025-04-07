@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .no-tailwind-reset,
+  .no-tailwind-reset * {
+    margin: revert;
+    padding: revert;
+    font-family: revert;
+    font-size: revert;
+    box-sizing: revert;
+    list-style: revert;
+  }
+}
